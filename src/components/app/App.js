@@ -9,6 +9,8 @@ import {urls} from "../../utils/urlUtils";
 import CardContent from "@material-ui/core/CardContent";
 import Card from "@material-ui/core/Card";
 import Route from "react-router-dom/es/Route";
+import {Welcome} from "../welcome/Welcome";
+import Add from "../add/Add";
 
 
 const theme = createMuiTheme({

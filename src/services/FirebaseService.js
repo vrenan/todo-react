@@ -15,4 +15,11 @@ export default class FirebaseService {
         });
         return query;
     }
+
+    static pushData = (nodePath, obj) => {
+        const ref = firebaseDatabase.ref(nodePath).push();
+        const id = firebaseDatabase.ref(nodePath).push().key;
+        ref.set(obj);
+        return id;
+    }
 }

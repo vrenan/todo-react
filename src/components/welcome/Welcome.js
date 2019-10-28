@@ -15,6 +15,7 @@ export const Welcome = () => {
               Object.values(urls).map((url, index) => {
                   return <Button raised keys={index} component={ props =>
                       <Link to={url.path} {...props}/> }>
+                      {url.name}
                   </Button>
               })
           }
